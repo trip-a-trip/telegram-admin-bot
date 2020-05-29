@@ -441,13 +441,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trip-a-trip/lib@npm:^1.6.0":
-  version: 1.6.0
-  resolution: "@trip-a-trip/lib@npm:1.6.0"
+"@trip-a-trip/lib@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "@trip-a-trip/lib@npm:1.7.0"
   dependencies:
     axios: ^0.19.2
     qs: ^6.9.4
-  checksum: 3/cc796843b133b9d0ad08682c1aff61778d7e3826ff1ef4eba99e2f0ba5d5ba0921c993c2c0b623334785ead1e6002dbec2d32c7036149b97e6262bdc27852de5
+  checksum: 3/b818f790e2fb7f3113ce32d5e4f7f32688d377834bb6b7edb467826a9e02754378238c024aae47e1a043d2eafb300dd592cbb2a8976511cdffaed31ec1c6e366
   languageName: node
   linkType: hard
 
@@ -547,6 +547,13 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: 3/3aaf557d5b82e733d5a17b7f55af5d6be953363c3a594f006d64265790fe87c301c6e1400c0b6b1cf72add50a0ceddc25afb8231ab8302a2e5b6ebfbfac30e5d
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:^4.14.153":
+  version: 4.14.153
+  resolution: "@types/lodash@npm:4.14.153"
+  checksum: 3/7d12c7c2e00abd498a0aabd129eeb2361d4872e1f40ddc0b42d7a80fab445171c217222e5bf6e9085e93531a4c0a2ec131f4078112d395db6b91328f40c40f5e
   languageName: node
   linkType: hard
 
@@ -1339,8 +1346,9 @@ __metadata:
     "@solid-soda/config": ^2.2.0
     "@solid-soda/evolutions": ^0.1.2
     "@solid-soda/tsn": ^1.2.3
-    "@trip-a-trip/lib": ^1.6.0
+    "@trip-a-trip/lib": ^1.7.0
     "@types/bull": ^3.13.0
+    "@types/lodash": ^4.14.153
     "@types/md5": ^2.2.0
     "@types/node": 12
     "@typescript-eslint/eslint-plugin": ^2.27.0
@@ -1360,6 +1368,7 @@ __metadata:
     fastify: ^2.14.1
     husky: ^4.2.5
     lint-staged: ^10.1.3
+    lodash: ^4.17.15
     md5: ^2.2.1
     nest-telegram: ^0.6.8
     nodemon: ^2.0.4

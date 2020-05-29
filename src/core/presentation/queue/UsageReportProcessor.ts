@@ -3,19 +3,19 @@ import { Processor, Process } from '@nestjs/bull';
 import { TelegramClient } from 'nest-telegram';
 import { Job } from 'bull';
 
-import { USER_REPORT_QUEUE } from '&app/external/constants';
-import { UserReporter } from '&app/core/application/UserReporter';
+import { USAGE_REPORT_QUEUE } from '&app/external/constants';
+import { UsageReporter } from '&app/core/application/UsageReporter';
 
-import { UserReportTemplate } from '../template/UserReportTemplate';
 import { ReportJobPayload } from './ReportJobPayload';
+import { UsageReportTemplate } from '../template/UsageReportTemplate';
 
-@Processor(USER_REPORT_QUEUE)
-export class UserReportProcessor {
+@Processor(USAGE_REPORT_QUEUE)
+export class UsageReportProcessor {
   private readonly chatId: string;
 
   constructor(
-    private readonly userReporter: UserReporter,
-    private readonly template: UserReportTemplate,
+    private readonly usageReporter: UsageReporter,
+    private readonly template: UsageReportTemplate,
     private readonly telegram: TelegramClient,
     config: Configuration,
   ) {
@@ -23,15 +23,17 @@ export class UserReportProcessor {
   }
 
   @Process()
-  async handleUserReport(job: Job<ReportJobPayload>) {
+  async handleUsageReport(job: Job<ReportJobPayload>) {
     try {
-      const report = await this.userReporter.report(job.data.group);
+      const report = await this.usageReporter.report(job.data.group);
+      console.log(report);
       const template = await this.template.render(report);
 
       await this.telegram.sendMarkdown(this.chatId, template);
 
       await job.moveToCompleted();
     } catch (error) {
+      console.log(error);
       await job.moveToFailed(error);
     }
   }

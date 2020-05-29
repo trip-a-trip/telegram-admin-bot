@@ -5,17 +5,17 @@ import { UserReport } from '&app/core/domain/UserReport';
 import { Template } from './Template';
 
 @Injectable()
-export class UserReportTemplate implements Template<UserReport> {
-  async render(data: UserReport) {
-    const lines = ['Отчетик 💁\n'];
+export class UserReportTemplate extends Template<UserReport> {
+  async render({ progress }: UserReport) {
+    const lines = ['Отчётик 💁\n'];
 
-    if (data.oldCount === data.newCount) {
-      lines.push('Новый пользователей нет 😥');
-    } else {
+    if (progress.isChanged) {
       lines.push(
-        `Теперь у нас *${data.newCount}* пользователей (было ${data.oldCount})`,
-        `\n*+${Math.round(data.increasePercentage)} %*`,
+        `Теперь у нас *${progress.newValue}* пользователей (было ${progress.oldValue})`,
+        `\n*${this.formatPercentage(progress.increasePercentage)}*`,
       );
+    } else {
+      lines.push('Новый пользователей нет 😥');
     }
 
     return lines.join('\n');

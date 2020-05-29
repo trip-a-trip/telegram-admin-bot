@@ -71,11 +71,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "@trip-a-trip/lib",
-        "npm:1.6.0"
+        "npm:1.7.0"
       ],
       [
         "@types/bull",
         "npm:3.13.0"
+      ],
+      [
+        "@types/lodash",
+        "npm:4.14.153"
       ],
       [
         "@types/md5",
@@ -154,6 +158,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:10.2.6"
       ],
       [
+        "lodash",
+        "npm:4.17.15"
+      ],
+      [
         "md5",
         "npm:2.2.1"
       ],
@@ -215,8 +223,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@solid-soda/config", "npm:2.2.0"],
             ["@solid-soda/evolutions", "npm:0.1.2"],
             ["@solid-soda/tsn", "npm:1.2.3"],
-            ["@trip-a-trip/lib", "npm:1.6.0"],
+            ["@trip-a-trip/lib", "npm:1.7.0"],
             ["@types/bull", "npm:3.13.0"],
+            ["@types/lodash", "npm:4.14.153"],
             ["@types/md5", "npm:2.2.0"],
             ["@types/node", "npm:12.12.42"],
             ["@typescript-eslint/eslint-plugin", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:2.34.0"],
@@ -236,6 +245,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fastify", "npm:2.14.1"],
             ["husky", "npm:4.2.5"],
             ["lint-staged", "npm:10.2.6"],
+            ["lodash", "npm:4.17.15"],
             ["md5", "npm:2.2.1"],
             ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.8"],
             ["nodemon", "npm:2.0.4"],
@@ -747,10 +757,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@trip-a-trip/lib", [
-        ["npm:1.6.0", {
-          "packageLocation": "./.yarn/cache/@trip-a-trip-lib-npm-1.6.0-05b7bee77d-3.zip/node_modules/@trip-a-trip/lib/",
+        ["npm:1.7.0", {
+          "packageLocation": "./.yarn/cache/@trip-a-trip-lib-npm-1.7.0-c5a888bb6f-3.zip/node_modules/@trip-a-trip/lib/",
           "packageDependencies": [
-            ["@trip-a-trip/lib", "npm:1.6.0"],
+            ["@trip-a-trip/lib", "npm:1.7.0"],
             ["axios", "npm:0.19.2"],
             ["qs", "npm:6.9.4"]
           ],
@@ -871,6 +881,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/keyv", "npm:3.1.1"],
             ["@types/node", "npm:13.13.9"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/lodash", [
+        ["npm:4.14.153", {
+          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.153-b6322a0d94-3.zip/node_modules/@types/lodash/",
+          "packageDependencies": [
+            ["@types/lodash", "npm:4.14.153"]
           ],
           "linkType": "HARD",
         }]
@@ -1791,8 +1810,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@solid-soda/config", "npm:2.2.0"],
             ["@solid-soda/evolutions", "npm:0.1.2"],
             ["@solid-soda/tsn", "npm:1.2.3"],
-            ["@trip-a-trip/lib", "npm:1.6.0"],
+            ["@trip-a-trip/lib", "npm:1.7.0"],
             ["@types/bull", "npm:3.13.0"],
+            ["@types/lodash", "npm:4.14.153"],
             ["@types/md5", "npm:2.2.0"],
             ["@types/node", "npm:12.12.42"],
             ["@typescript-eslint/eslint-plugin", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:2.34.0"],
@@ -1812,6 +1832,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fastify", "npm:2.14.1"],
             ["husky", "npm:4.2.5"],
             ["lint-staged", "npm:10.2.6"],
+            ["lodash", "npm:4.17.15"],
             ["md5", "npm:2.2.1"],
             ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.8"],
             ["nodemon", "npm:2.0.4"],

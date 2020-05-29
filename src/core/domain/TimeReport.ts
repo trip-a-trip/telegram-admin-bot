@@ -9,8 +9,11 @@ export class TimeReport implements Interval {
     readonly end: Date,
   ) {}
 
-  static previousGroup(group: ReportGroup): TimeReport {
-    const now = new Date();
+  previous() {
+    return TimeReport.previousGroup(this.group, this.start);
+  }
+
+  static previousGroup(group: ReportGroup, now = new Date()): TimeReport {
     switch (group) {
       case ReportGroup.Day:
         return new TimeReport(

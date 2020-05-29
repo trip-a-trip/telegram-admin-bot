@@ -17,6 +17,9 @@ import { HelloHandler } from './core/presentation/telegram/HelloHandler';
 import { typeOrmProvider } from './external/typeOrmProvider';
 import { UserHistory } from './core/domain/UserHistory.entity';
 import { Historian } from './core/infrastructure/Historian';
+import { UsageReporter } from './core/application/UsageReporter';
+import { UsageReportProcessor } from './core/presentation/queue/UsageReportProcessor';
+import { UsageReportTemplate } from './core/presentation/template/UsageReportTemplate';
 
 @Module({
   imports: [
@@ -36,8 +39,11 @@ import { Historian } from './core/infrastructure/Historian';
     Historian,
     HelloHandler,
     UserReporter,
+    UsageReporter,
     ReportSetupManager,
     UserReportTemplate,
+    UsageReportProcessor,
+    UsageReportTemplate,
     UserReportProcessor,
   ],
 })

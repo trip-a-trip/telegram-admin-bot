@@ -8,6 +8,7 @@ import { ReportGroup } from '../domain/ReportGroup';
 import { TimeReport } from '../domain/TimeReport';
 import { UserHistory } from '../domain/UserHistory.entity';
 import { Historian } from '../infrastructure/Historian';
+import { ProgressReport } from '../domain/ProgressReport';
 
 @Injectable()
 export class UserReporter {
@@ -30,6 +31,8 @@ export class UserReporter {
     await this.em.save(newHistory);
 
     const oldCount = oldHistory ? oldHistory.count : 0;
-    return new UserReport(oldCount, newCount, time);
+
+    const progress = new ProgressReport(oldCount, newCount);
+    return new UserReport(progress, time);
   }
 }

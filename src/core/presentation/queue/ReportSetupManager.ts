@@ -9,7 +9,7 @@ import { ReportJobPayload } from './ReportJobPayload';
 
 @Injectable()
 export class ReportSetupManager implements OnApplicationBootstrap {
-  private EVERY_DAY = { cron: '0 3 * * *' };
+  private EVERY_DAY = { cron: '0 1 * * *' };
 
   constructor(
     @InjectQueue(USER_REPORT_QUEUE)
@@ -19,7 +19,10 @@ export class ReportSetupManager implements OnApplicationBootstrap {
   ) {}
 
   async onApplicationBootstrap() {
-    await Promise.all([this.userReportQueue.empty()]);
+    await Promise.all([
+      this.userReportQueue.empty(),
+      this.usageReportQueue.empty(),
+    ]);
 
     await Promise.all([
       this.userReportQueue.add(
@@ -29,10 +32,13 @@ export class ReportSetupManager implements OnApplicationBootstrap {
           repeat: this.EVERY_DAY,
         },
       ),
-      // this.usageReportQueue.add({ group: ReportGroup.Day }, {
-      //     jobId: USAGE_REPORT_QUEUE,
-      //     repeat: this.EVERY_DAY,
-      // })
+      this.usageReportQueue.add(
+        { group: ReportGroup.Day },
+        {
+          jobId: USAGE_REPORT_QUEUE,
+          repeat: this.EVERY_DAY,
+        },
+      ),
     ]);
   }
 }

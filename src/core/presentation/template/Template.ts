@@ -1,3 +1,9 @@
-export interface Template<T> {
-  render(data: T): Promise<string>;
+export abstract class Template<T> {
+  abstract render(data: T): Promise<string>;
+
+  formatPercentage(percentage: number): string {
+    const prefix = percentage > 0 ? '+' : '';
+
+    return `${prefix}${Math.round(percentage)} %`;
+  }
 }
