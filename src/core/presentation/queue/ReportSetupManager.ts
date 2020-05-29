@@ -9,7 +9,7 @@ import { ReportJobPayload } from './ReportJobPayload';
 
 @Injectable()
 export class ReportSetupManager implements OnApplicationBootstrap {
-  private EVERY_DAY = { cron: '0 12 * * *' };
+  private EVERY_DAY = { cron: '0 3 * * *' };
 
   constructor(
     @InjectQueue(USER_REPORT_QUEUE)
