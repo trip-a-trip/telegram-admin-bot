@@ -19,6 +19,8 @@ export class ReportSetupManager implements OnApplicationBootstrap {
   ) {}
 
   async onApplicationBootstrap() {
+    await Promise.all([this.userReportQueue.empty()]);
+
     await Promise.all([
       this.userReportQueue.add(
         { group: ReportGroup.Day },
