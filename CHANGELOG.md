@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/trip-a-trip/aux-reporter/compare/v1.0.0...v1.0.1) (2020-05-30)
+
+### Bug Fixes
+
+- fix miss order of reports ([53d0098](https://github.com/trip-a-trip/aux-reporter/commit/53d0098a7ba21e1c72d6d05a6f89e7e14cfd3e21))
+
 ## 1.0.0 (2020-05-29)
 
 ### Features
