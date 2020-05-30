@@ -15,8 +15,8 @@ export class UsageReporter {
     const time = TimeReport.previousGroup(group);
 
     const [prev, cur] = await Promise.all([
-      this.getStat(time),
       this.getStat(time.previous()),
+      this.getStat(time),
     ]);
 
     const seen = new ProgressReport(prev.count, cur.count);
