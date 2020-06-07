@@ -1,4 +1,5 @@
 import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
+import { MODERATION_REQUEST_QUEUE } from '@trip-a-trip/lib';
 import { TelegramModule, TelegramBot } from 'nest-telegram';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { BullModule } from '@nestjs/bull';
@@ -20,13 +21,19 @@ import { Historian } from './core/infrastructure/Historian';
 import { UsageReporter } from './core/application/UsageReporter';
 import { UsageReportProcessor } from './core/presentation/queue/UsageReportProcessor';
 import { UsageReportTemplate } from './core/presentation/template/UsageReportTemplate';
+import { ModerationRequestProcessor } from './core/presentation/queue/ModerationRequestProcessor';
+import { ModerationRequestTemplate } from './core/presentation/template/ModerationRequestTemplate';
+import { ModerationHandler } from './core/presentation/telegram/ModerationHandler';
 
 @Module({
   imports: [
     ConfigModule,
     PlatformModule,
-    BullModule.registerQueueAsync(bullProvider(USER_REPORT_QUEUE)),
-    BullModule.registerQueueAsync(bullProvider(USAGE_REPORT_QUEUE)),
+    BullModule.registerQueueAsync(
+      bullProvider(USER_REPORT_QUEUE),
+      bullProvider(USAGE_REPORT_QUEUE),
+      bullProvider(MODERATION_REQUEST_QUEUE),
+    ),
     TypeOrmModule.forRootAsync(typeOrmProvider),
     TypeOrmModule.forFeature([UserHistory]),
     TelegramModule.forRootAsync({
@@ -40,11 +47,14 @@ import { UsageReportTemplate } from './core/presentation/template/UsageReportTem
     HelloHandler,
     UserReporter,
     UsageReporter,
-    ReportSetupManager,
+    // ReportSetupManager,
     UserReportTemplate,
-    UsageReportProcessor,
+    // UsageReportProcessor,
     UsageReportTemplate,
-    UserReportProcessor,
+    // UserReportProcessor,
+    ModerationRequestTemplate,
+    ModerationRequestProcessor,
+    ModerationHandler,
   ],
 })
 export class AppModule implements NestModule {

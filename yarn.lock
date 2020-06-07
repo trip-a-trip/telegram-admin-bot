@@ -441,13 +441,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trip-a-trip/lib@npm:^1.7.0":
-  version: 1.7.0
-  resolution: "@trip-a-trip/lib@npm:1.7.0"
+"@trip-a-trip/lib@npm:^1.11.1":
+  version: 1.11.1
+  resolution: "@trip-a-trip/lib@npm:1.11.1"
   dependencies:
     axios: ^0.19.2
     qs: ^6.9.4
-  checksum: 3/b818f790e2fb7f3113ce32d5e4f7f32688d377834bb6b7edb467826a9e02754378238c024aae47e1a043d2eafb300dd592cbb2a8976511cdffaed31ec1c6e366
+  checksum: 3/03167cc6bb34b1d938d7a604763cecc770879905fe790c189110025298802a92ac50567f05bb6d50d315aa112bec3d736ec72f38bc80671853a355a4c2e4fe4e
   languageName: node
   linkType: hard
 
@@ -1346,7 +1346,7 @@ __metadata:
     "@solid-soda/config": ^2.2.0
     "@solid-soda/evolutions": ^0.1.2
     "@solid-soda/tsn": ^1.2.3
-    "@trip-a-trip/lib": ^1.7.0
+    "@trip-a-trip/lib": ^1.11.1
     "@types/bull": ^3.13.0
     "@types/lodash": ^4.14.153
     "@types/md5": ^2.2.0
@@ -1370,7 +1370,7 @@ __metadata:
     lint-staged: ^10.1.3
     lodash: ^4.17.15
     md5: ^2.2.1
-    nest-telegram: ^0.6.8
+    nest-telegram: ^0.6.9
     nodemon: ^2.0.4
     pg: ^8.2.1
     prettier: ^2.0.4
@@ -6647,9 +6647,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"nest-telegram@npm:^0.6.8":
-  version: 0.6.8
-  resolution: "nest-telegram@npm:0.6.8"
+"nest-telegram@npm:^0.6.9":
+  version: 0.6.9
+  resolution: "nest-telegram@npm:0.6.9"
   dependencies:
     "@nestjs/common": ^7.0
     lodash: ^4.17.15
@@ -6657,7 +6657,7 @@ fsevents@~2.1.2:
     telegraf: ^3.38.0
   peerDependencies:
     reflect-metadata: ^0.1.13
-  checksum: 3/a031db7b91de069b7d8189c305494bc93ce40961e378309d7843c110a72fbb5f2f59502eddddea73b6116d14f1b2dd2e41885198aafe2822fe374fb928513591
+  checksum: 3/250f45702bfaded1d651455dbecb9cb6243ede63abc4450ae0ed61e81db5f79ba4ed1628079a3899f78afcb536dbd1107e1954945a10f078986149b11116e5c1
   languageName: node
   linkType: hard
 

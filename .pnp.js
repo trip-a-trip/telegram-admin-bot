@@ -71,7 +71,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "@trip-a-trip/lib",
-        "npm:1.7.0"
+        "npm:1.11.1"
       ],
       [
         "@types/bull",
@@ -167,7 +167,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "nest-telegram",
-        "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.8"
+        "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.9"
       ],
       [
         "nodemon",
@@ -223,7 +223,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@solid-soda/config", "npm:2.2.0"],
             ["@solid-soda/evolutions", "npm:0.1.2"],
             ["@solid-soda/tsn", "npm:1.2.3"],
-            ["@trip-a-trip/lib", "npm:1.7.0"],
+            ["@trip-a-trip/lib", "npm:1.11.1"],
             ["@types/bull", "npm:3.13.0"],
             ["@types/lodash", "npm:4.14.153"],
             ["@types/md5", "npm:2.2.0"],
@@ -247,7 +247,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:10.2.6"],
             ["lodash", "npm:4.17.15"],
             ["md5", "npm:2.2.1"],
-            ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.8"],
+            ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.9"],
             ["nodemon", "npm:2.0.4"],
             ["pg", "npm:8.2.1"],
             ["prettier", "npm:2.0.5"],
@@ -757,10 +757,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@trip-a-trip/lib", [
-        ["npm:1.7.0", {
-          "packageLocation": "./.yarn/cache/@trip-a-trip-lib-npm-1.7.0-c5a888bb6f-3.zip/node_modules/@trip-a-trip/lib/",
+        ["npm:1.11.1", {
+          "packageLocation": "./.yarn/cache/@trip-a-trip-lib-npm-1.11.1-8adff14ac8-3.zip/node_modules/@trip-a-trip/lib/",
           "packageDependencies": [
-            ["@trip-a-trip/lib", "npm:1.7.0"],
+            ["@trip-a-trip/lib", "npm:1.11.1"],
             ["axios", "npm:0.19.2"],
             ["qs", "npm:6.9.4"]
           ],
@@ -1810,7 +1810,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@solid-soda/config", "npm:2.2.0"],
             ["@solid-soda/evolutions", "npm:0.1.2"],
             ["@solid-soda/tsn", "npm:1.2.3"],
-            ["@trip-a-trip/lib", "npm:1.7.0"],
+            ["@trip-a-trip/lib", "npm:1.11.1"],
             ["@types/bull", "npm:3.13.0"],
             ["@types/lodash", "npm:4.14.153"],
             ["@types/md5", "npm:2.2.0"],
@@ -1834,7 +1834,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:10.2.6"],
             ["lodash", "npm:4.17.15"],
             ["md5", "npm:2.2.1"],
-            ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.8"],
+            ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.9"],
             ["nodemon", "npm:2.0.4"],
             ["pg", "npm:8.2.1"],
             ["prettier", "npm:2.0.5"],
@@ -7632,10 +7632,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["nest-telegram", [
-        ["virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.8", {
-          "packageLocation": "./.yarn/$$virtual/nest-telegram-virtual-ec4191484e/0/cache/nest-telegram-npm-0.6.8-e6f0dbe117-3.zip/node_modules/nest-telegram/",
+        ["virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.9", {
+          "packageLocation": "./.yarn/$$virtual/nest-telegram-virtual-21ddeaae28/0/cache/nest-telegram-npm-0.6.9-e2e46c6476-3.zip/node_modules/nest-telegram/",
           "packageDependencies": [
-            ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.8"],
+            ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.9"],
             ["@nestjs/common", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:7.1.1"],
             ["lodash", "npm:4.17.15"],
             ["reflect-metadata", "npm:0.1.13"],
