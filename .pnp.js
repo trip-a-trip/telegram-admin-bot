@@ -167,7 +167,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "nest-telegram",
-        "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.9"
+        "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.10"
       ],
       [
         "nodemon",
@@ -247,7 +247,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:10.2.6"],
             ["lodash", "npm:4.17.15"],
             ["md5", "npm:2.2.1"],
-            ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.9"],
+            ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.10"],
             ["nodemon", "npm:2.0.4"],
             ["pg", "npm:8.2.1"],
             ["prettier", "npm:2.0.5"],
@@ -1834,7 +1834,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:10.2.6"],
             ["lodash", "npm:4.17.15"],
             ["md5", "npm:2.2.1"],
-            ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.9"],
+            ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.10"],
             ["nodemon", "npm:2.0.4"],
             ["pg", "npm:8.2.1"],
             ["prettier", "npm:2.0.5"],
@@ -7632,10 +7632,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["nest-telegram", [
-        ["virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.9", {
-          "packageLocation": "./.yarn/$$virtual/nest-telegram-virtual-21ddeaae28/0/cache/nest-telegram-npm-0.6.9-e2e46c6476-3.zip/node_modules/nest-telegram/",
+        ["virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.10", {
+          "packageLocation": "./.yarn/$$virtual/nest-telegram-virtual-9c965383ce/0/cache/nest-telegram-npm-0.6.10-71375b25f7-3.zip/node_modules/nest-telegram/",
           "packageDependencies": [
-            ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.9"],
+            ["nest-telegram", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:0.6.10"],
             ["@nestjs/common", "virtual:cc79492a6292252c3e8d0a1fd13485ad4723035bb9200d41942259d8a7744af04f277aa98f511a4c017b7f064ecefab9363a11a2d99629fa0dc3f09ca15d2a3c#npm:7.1.1"],
             ["lodash", "npm:4.17.15"],
             ["reflect-metadata", "npm:0.1.13"],
