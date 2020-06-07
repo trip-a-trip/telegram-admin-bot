@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/trip-a-trip/aux-reporter/compare/v1.0.2...v1.1.0) (2020-06-07)
+
+### Features
+
+- add moderation handling ([15e1eec](https://github.com/trip-a-trip/aux-reporter/commit/15e1eec0aa5b47113ed37b810cdb02afdf1c722e))
+
+### Bug Fixes
+
+- bump nest-telegram ([ea15f1e](https://github.com/trip-a-trip/aux-reporter/commit/ea15f1ea3c8d08276ed615faac899dd0631fbfd9))
+
 ### [1.0.2](https://github.com/trip-a-trip/aux-reporter/compare/v1.0.1...v1.0.2) (2020-05-31)
 
 ### Bug Fixes
