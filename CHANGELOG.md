@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/trip-a-trip/aux-reporter/compare/v1.1.1...v1.1.2) (2020-06-08)
+
+### Bug Fixes
+
+- fix port ([5f25c2f](https://github.com/trip-a-trip/aux-reporter/commit/5f25c2f6747a6908f5a05261a7e4126b6d1ecbdb))
+- port and host ([2a219af](https://github.com/trip-a-trip/aux-reporter/commit/2a219afa31993b534bb36da73f30d35dbb734f80))
+
 ### [1.1.1](https://github.com/trip-a-trip/aux-reporter/compare/v1.1.0...v1.1.1) (2020-06-07)
 
 ### Bug Fixes
