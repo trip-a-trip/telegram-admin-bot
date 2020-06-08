@@ -22,7 +22,7 @@ export class ModerationRequestTemplate extends Template<DraftFields> {
       `*Бейджы*: ${badges.join(', ')}`,
       `*Тип*: ${fields.kind.join(', ')}`,
       fields.links.length > 0 && `*Сссылки*:`,
-      ...fields.links.map((link) => `  - ${link.title} — ${link.url}`),
+      ...fields.links.map((link) => `  - [${link.title}](${link.url})`),
       fields.address && `*Адрес*: ${fields.address}`,
       `*Координаты*:`,
       `  - Широта: ${fields.coordinates.latitude}`,
