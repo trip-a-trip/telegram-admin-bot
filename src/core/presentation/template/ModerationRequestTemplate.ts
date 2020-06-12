@@ -32,6 +32,6 @@ export class ModerationRequestTemplate extends Template<DraftFields> {
     const funnyEmoji = ['🥑', '🧉', '🏝'];
     lines.push(`\nМодерируйте скорее ${sample(funnyEmoji)}`);
 
-    return lines.join('\n');
+    return lines.filter(Boolean).join('\n');
   }
 }
