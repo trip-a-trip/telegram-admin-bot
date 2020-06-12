@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.5](https://github.com/trip-a-trip/aux-reporter/compare/v1.1.4...v1.1.5) (2020-06-12)
+
+### Bug Fixes
+
+- remove empty strings from template ([96b556a](https://github.com/trip-a-trip/aux-reporter/commit/96b556ab4c40eb1af07ad4e8e7f4a585b85693fd))
+
 ### [1.1.4](https://github.com/trip-a-trip/aux-reporter/compare/v1.1.3...v1.1.4) (2020-06-12)
 
 ### Bug Fixes
