@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { EatClient } from '@trip-a-trip/lib';
-import { uniqBy } from 'lodash';
+import { uniqBy, uniq } from 'lodash';
 
 import { ReportGroup } from '../domain/ReportGroup';
 import { TimeReport } from '../domain/TimeReport';
@@ -31,8 +31,8 @@ export class UsageReporter {
 
     return {
       count: seen.length,
-      uniqUsers: uniqBy(seen, (item) => item.userId).length,
-      uniqVenus: uniqBy(seen, (item) => item.venueId).length,
+      uniqUsers: uniq(seen.map((item) => item.userId)).length,
+      uniqVenus: uniq(seen.map((item) => item.venueId)).length,
     };
   }
 }
