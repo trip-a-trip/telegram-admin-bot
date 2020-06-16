@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.6](https://github.com/trip-a-trip/aux-reporter/compare/v1.1.5...v1.1.6) (2020-06-16)
+
+### Bug Fixes
+
+- **bull:** remove ids from jobs ([75bd27f](https://github.com/trip-a-trip/aux-reporter/commit/75bd27fbb80014e0a96fd1d355e1e9839f3ccefa))
+
 ### [1.1.5](https://github.com/trip-a-trip/aux-reporter/compare/v1.1.4...v1.1.5) (2020-06-12)
 
 ### Bug Fixes
