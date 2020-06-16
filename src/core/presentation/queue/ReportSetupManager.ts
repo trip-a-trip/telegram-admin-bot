@@ -28,14 +28,12 @@ export class ReportSetupManager implements OnApplicationBootstrap {
       this.userReportQueue.add(
         { group: ReportGroup.Day },
         {
-          jobId: USER_REPORT_QUEUE,
           repeat: this.EVERY_DAY,
         },
       ),
       this.usageReportQueue.add(
         { group: ReportGroup.Day },
         {
-          jobId: USAGE_REPORT_QUEUE,
           repeat: this.EVERY_DAY,
         },
       ),
