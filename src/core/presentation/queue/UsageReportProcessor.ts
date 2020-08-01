@@ -26,7 +26,6 @@ export class UsageReportProcessor {
   async handleUsageReport(job: Job<ReportJobPayload>) {
     try {
       const report = await this.usageReporter.report(job.data.group);
-      console.log(report);
       const template = await this.template.render(report);
 
       await this.telegram.sendMarkdown(this.chatId, template);
