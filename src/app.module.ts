@@ -1,7 +1,6 @@
 import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
 import { MODERATION_REQUEST_QUEUE } from '@trip-a-trip/lib';
 import { TelegramModule, TelegramBot } from 'nest-telegram';
-import { TypeOrmModule } from '@nestjs/typeorm';
 import { BullModule } from '@nestjs/bull';
 import { ModuleRef } from '@nestjs/core';
 
