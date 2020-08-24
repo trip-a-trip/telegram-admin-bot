@@ -7,20 +7,9 @@ import { ModuleRef } from '@nestjs/core';
 
 import { ConfigModule } from './external/config.module';
 import { bullProvider } from './external/bullProvider';
-import { USER_REPORT_QUEUE, USAGE_REPORT_QUEUE } from './external/constants';
-import { ReportSetupManager } from './core/presentation/queue/ReportSetupManager';
 import { PlatformModule } from './platform/platform.module';
-import { UserReportTemplate } from './core/presentation/template/UserReportTemplate';
-import { UserReportProcessor } from './core/presentation/queue/UserReportProcessor';
 import { TelegramOptionsFactory } from './external/TelegramOptionsFactory';
-import { UserReporter } from './core/application/UserReporter';
 import { HelloHandler } from './core/presentation/telegram/HelloHandler';
-import { typeOrmProvider } from './external/typeOrmProvider';
-import { UserHistory } from './core/domain/UserHistory.entity';
-import { Historian } from './core/infrastructure/Historian';
-import { UsageReporter } from './core/application/UsageReporter';
-import { UsageReportProcessor } from './core/presentation/queue/UsageReportProcessor';
-import { UsageReportTemplate } from './core/presentation/template/UsageReportTemplate';
 import { ModerationRequestProcessor } from './core/presentation/queue/ModerationRequestProcessor';
 import { ModerationRequestTemplate } from './core/presentation/template/ModerationRequestTemplate';
 import { ModerationHandler } from './core/presentation/telegram/ModerationHandler';
@@ -29,13 +18,7 @@ import { ModerationHandler } from './core/presentation/telegram/ModerationHandle
   imports: [
     ConfigModule,
     PlatformModule,
-    BullModule.registerQueueAsync(
-      bullProvider(USER_REPORT_QUEUE),
-      bullProvider(USAGE_REPORT_QUEUE),
-      bullProvider(MODERATION_REQUEST_QUEUE),
-    ),
-    TypeOrmModule.forRootAsync(typeOrmProvider),
-    TypeOrmModule.forFeature([UserHistory]),
+    BullModule.registerQueueAsync(bullProvider(MODERATION_REQUEST_QUEUE)),
     TelegramModule.forRootAsync({
       imports: [ConfigModule],
       useClass: TelegramOptionsFactory,
@@ -43,15 +26,7 @@ import { ModerationHandler } from './core/presentation/telegram/ModerationHandle
   ],
   controllers: [],
   providers: [
-    Historian,
     HelloHandler,
-    UserReporter,
-    UsageReporter,
-    ReportSetupManager,
-    UserReportTemplate,
-    UsageReportProcessor,
-    UsageReportTemplate,
-    UserReportProcessor,
     ModerationRequestTemplate,
     ModerationRequestProcessor,
     ModerationHandler,

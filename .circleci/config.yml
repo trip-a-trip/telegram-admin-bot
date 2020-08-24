@@ -45,8 +45,7 @@ workflows:
           image_name: 'aux-reporter'
           image_version: CIRCLE_TAG
           path_to_app: PATH_TO_APP
-          apply_post_install: true
-          post_install_script: 'yarn evolutions -y'
+          apply_post_install: false
           container_name: 'reporter_app'
           filters:
             tags:
