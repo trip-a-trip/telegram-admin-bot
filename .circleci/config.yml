@@ -25,7 +25,7 @@ workflows:
               only: /.*/
       - docker/build_push:
           org_name: 'tripatrip'
-          image_name: 'aux-reporter'
+          image_name: 'telegram-admin-bot'
           image_version: CIRCLE_TAG
           docker_username: DOCKER_USERNAME
           docker_password: DOCKER_PASSWORD
@@ -42,11 +42,11 @@ workflows:
           ssh_user: SSH_USER
           ssh_host: SSH_HOST
           org_name: 'tripatrip'
-          image_name: 'aux-reporter'
+          image_name: 'telegram-admin-bot'
           image_version: CIRCLE_TAG
           path_to_app: PATH_TO_APP
           apply_post_install: false
-          container_name: 'reporter_app'
+          container_name: 'telegram_admin_bot'
           filters:
             tags:
               only: /.*/
